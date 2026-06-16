@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test Page</title>
+  <meta name="description" content="Test Page">
+  <link rel="icon" href="/assets/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="/styles/main.css">
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+  <header id="header">
+    <div class="header-container">
+      <div class="logo-container">
+        <a href="/"><img src="/assets/logo-header.png" alt="Philadelphia Tango Festival" class="logo"></a>
+      </div>
+      <div class="header-button-container">
+        <button class="registration-button" onclick="window.location.href='https://philadelphiatangoschool.cowtinker.com/om/workshops/2026-philadelphia-tango-festival-conscious-improvisation-in-tango'">
+          Registration
+        </button>
+      </div>
+      <div>
+        <button class="menu-button" onclick="openMenu()" aria-label="Menu">
+          <span class="menu-icon-button">
+            <svg class="menu-icon" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+            </svg>
+          </span>
+          <div style="padding-right: 12px;">Menu</div>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-menu-overlay" onclick="closeMenu()"></div>
+  <div class="mobile-menu">
+    <div class="menu-header" onclick="window.location.href='/'">
+      <img src="/assets/logo-header.png" alt="Philadelphia Tango Festival">
+    </div>
+    <hr class="menu-divider">
+      <div class="menu-item"><a href="https://drive.google.com/file/d/19lrZBaO0DbpmR9MdziF2zYufpltoQfGl/view?usp=drive_link">Complete Schedule</a></div>
+      <div class="menu-item"><a href="/philly-tango-fest-teachers/">Teachers</a></div>
+      <div class="menu-item"><a href="/musicians/">Musicians</a></div>
+      <div class="menu-item"><a href="/concerts/">Concerts</a></div>
+      <div class="menu-item"><a href="/seminars/">Seminars</a></div>
+      <div class="menu-item"><a href="/absolute-beginner-track/">Beginner Track</a></div>
+      <div class="menu-item"><a href="/djs/">DJs</a></div>
+      <div class="menu-item"><a href="/pricing/">Pricing &amp; Passes</a></div>
+      <div class="menu-item"><a href="/cafe/">Cafe ZITA</a></div>
+      <div class="menu-item"><a href="/volunteers/">Volunteers</a></div>
+      <div class="menu-item"><a href="/venue/">Venue</a></div>
+      <div class="menu-item"><a href="/for-non-dancers/">For Non-Dancers</a></div>
+      <div class="menu-item"><a href="/parking/">Parking</a></div>
+      <div class="menu-item"><a href="/bochinche-records/">Bochinche Records</a></div>
+      <div class="menu-item"><a href="/safer-spaces/">Safer Spaces</a></div>
+      <div class="menu-item"><a href="/vendors/">Vendors</a></div>
+      <div class="menu-item"><a href="/restaurants/">Restaurants</a></div>
+      <div class="menu-item"><a href="/housing/">Hotels &amp; Housing</a></div>
+      <div class="menu-item"><a href="/transportation/">Transportation</a></div>
+      <div class="menu-item"><a href="/refund-policy/">Refund Policy</a></div>
+      <div class="menu-item"><a href="/what-to-see-and-do-in-philly/">What To See &amp; Do</a></div>
+      <div class="menu-item"><a href="/history-of-the-philly-tango-fest/">Festival History</a></div>
+      <div class="menu-item"><a href="/contact-us/">Contact</a></div>
+    <hr class="menu-divider">
+    <div class="menu-footer-button">
+      <button class="registration-button" onclick="window.location.href='https://philadelphiatangoschool.cowtinker.com/om/workshops/2026-philadelphia-tango-festival-conscious-improvisation-in-tango'">
+        Registration
+      </button>
+    </div>
+  </div>
+
+  <main>
+
+
+    <div class="content-wrapper">
+      <div class="content-container">
+        <div class="content-inner">
+          <section id="content">
+            
+            <div class="content-section">
+              
+              <h1 class="headline">Test Page</h1>
+              
+              <div class="body-content">
+                <table>
+<thead>
+<tr>
+<th>Pass or Ticket</th>
+<th>Pre-register by May 26</th>
+<th>At the door</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Full Pass - All Activities</td>
+<td>400</td>
+<td>500</td>
+</tr>
+<tr>
+<td>Concerts &amp; Milongas Pass + 5 Workshops</td>
+<td>300</td>
+<td>400</td>
+</tr>
+<tr>
+<td>Concerts &amp; Milongas Pass - All Concerts &amp; All Milongas</td>
+<td>190</td>
+<td>250</td>
+</tr>
+<tr>
+<td>Beginner Pass</td>
+<td>190</td>
+<td>210</td>
+</tr>
+<tr>
+<td>Thursday Pass - Concert &amp; Milonga</td>
+<td>55</td>
+<td>75</td>
+</tr>
+<tr>
+<td>Friday Pass - All Activities</td>
+<td>125</td>
+<td>150</td>
+</tr>
+<tr>
+<td>Saturday Pass - All Activities</td>
+<td>145</td>
+<td>175</td>
+</tr>
+<tr>
+<td>Sunday Pass - All Activities</td>
+<td>145</td>
+<td>175</td>
+</tr>
+<tr>
+<td>Concerts Pass</td>
+<td>75</td>
+<td>90</td>
+</tr>
+<tr>
+<td>Thursday or Friday concert</td>
+<td>30</td>
+<td>35</td>
+</tr>
+<tr>
+<td>Saturday concert</td>
+<td>35</td>
+<td>40</td>
+</tr>
+<tr>
+<td>Thursday or Friday milonga</td>
+<td>40</td>
+<td>45</td>
+</tr>
+<tr>
+<td>Saturday or Sunday milonga</td>
+<td>50</td>
+<td>60</td>
+</tr>
+<tr>
+<td>Saturday Late Night Milonga</td>
+<td>30</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>Single Workshop</td>
+<td>40</td>
+<td>45</td>
+</tr>
+<tr>
+<td>Single Beginner or All-levels workshop</td>
+<td>30</td>
+<td>35</td>
+</tr>
+<tr>
+<td>Single Lecture / Roundtable / Panel Discussion Puppet Show</td>
+<td>25</td>
+<td>30</td>
+</tr>
+<tr>
+<td>Single Yoga Class</td>
+<td>15</td>
+<td>20</td>
+</tr>
+<tr>
+<td>Single Film Screening</td>
+<td>10</td>
+<td>15</td>
+</tr>
+</tbody></table>
+
+              </div>
+            </div>
+          </section>
+
+          
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer id="footer">
+    <div class="footer-container">
+      <div class="footer-content">
+        <div class="footer-column">
+          <div class="footer-logo">
+            <img src="/assets/logo-original.png" alt="Philadelphia Tango Festival" onclick="window.location.href='/'">
+          </div>
+          <div class="footer-company">
+            <b>Philadelphia Argentine Tango School</b><br>
+            2030 Frankford Avenue<br>
+            Philadelphia, PA 19125<br>
+            617-291-3798<br>
+            meredithklein@gmail.com
+          </div>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/phillytangofestival" target="_blank" rel="noopener noreferrer">
+              <img src="/assets/facebook.png" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com/phillytangofestival/" target="_blank" rel="noopener noreferrer">
+              <img src="/assets/instagram.png" alt="Instagram">
+            </a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <div class="footer-column-content">
+        <div class="footer-item"><a href="https://drive.google.com/file/d/19lrZBaO0DbpmR9MdziF2zYufpltoQfGl/view?usp=drive_link">Complete Schedule</a></div>
+        <div class="footer-item"><a href="/philly-tango-fest-teachers/">Teachers</a></div>
+        <div class="footer-item"><a href="/musicians/">Musicians</a></div>
+        <div class="footer-item"><a href="/concerts/">Concerts</a></div>
+        <div class="footer-item"><a href="/seminars/">Seminars</a></div>
+        <div class="footer-item"><a href="/absolute-beginner-track/">Beginner Track</a></div>
+        <div class="footer-item"><a href="/djs/">DJs</a></div>
+        <div class="footer-item"><a href="/pricing/">Pricing &amp; Passes</a></div>
+        <div class="footer-item"><a href="/cafe/">Cafe ZITA</a></div>
+        <div class="footer-item"><a href="/volunteers/">Volunteers</a></div>
+        <div class="footer-item"><a href="/venue/">Venue</a></div>
+        <div class="footer-item"><a href="/for-non-dancers/">For Non-Dancers</a></div>
+          </div>
+        </div>
+        <div class="footer-column">
+          <div class="footer-column-content">
+        <div class="footer-item"><a href="/parking/">Parking</a></div>
+        <div class="footer-item"><a href="/bochinche-records/">Bochinche Records</a></div>
+        <div class="footer-item"><a href="/safer-spaces/">Safer Spaces</a></div>
+        <div class="footer-item"><a href="/vendors/">Vendors</a></div>
+        <div class="footer-item"><a href="/restaurants/">Restaurants</a></div>
+        <div class="footer-item"><a href="/housing/">Hotels &amp; Housing</a></div>
+        <div class="footer-item"><a href="/transportation/">Transportation</a></div>
+        <div class="footer-item"><a href="/refund-policy/">Refund Policy</a></div>
+        <div class="footer-item"><a href="/what-to-see-and-do-in-philly/">What To See &amp; Do</a></div>
+        <div class="footer-item"><a href="/history-of-the-philly-tango-fest/">Festival History</a></div>
+        <div class="footer-item"><a href="/contact-us/">Contact</a></div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div>© Meredith Klein 2018-2026. All rights reserved.</div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/scripts/main.js"></script>
+</body>
+</html>

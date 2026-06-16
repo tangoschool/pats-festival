@@ -33,18 +33,52 @@ document.addEventListener('DOMContentLoaded', function() {
   const slider = document.querySelector('#slider .slider-container');
   if (slider) {
     const slides = slider.querySelectorAll('.slide');
+    const prevButton = document.querySelector('.slider-arrow--prev');
+    const nextButton = document.querySelector('.slider-arrow--next');
     let currentSlide = 0;
+    const delay = 5000;
+    let slideInterval;
+
+    const showSlide = (index) => {
+      slides[currentSlide].classList.remove('active');
+      currentSlide = index;
+      slides[currentSlide].classList.add('active');
+    };
+
+    const nextSlide = () => showSlide((currentSlide + 1) % slides.length);
+    const prevSlide = () => showSlide((currentSlide - 1 + slides.length) % slides.length);
+
+    const startAutoRotation = () => {
+      slideInterval = setInterval(nextSlide, delay);
+    };
+
+    const resetAutoRotation = () => {
+      if (slideInterval) {
+        clearInterval(slideInterval);
+      }
+      startAutoRotation();
+    };
 
     if (slides.length > 0) {
       slides[0].classList.add('active');
 
       if (slides.length > 1) {
-        setInterval(function() {
-          slides[currentSlide].classList.remove('active');
-          currentSlide = (currentSlide + 1) % slides.length;
-          slides[currentSlide].classList.add('active');
-        }, 4000);
+        startAutoRotation();
       }
+    }
+
+    if (nextButton) {
+      nextButton.addEventListener('click', () => {
+        nextSlide();
+        resetAutoRotation();
+      });
+    }
+
+    if (prevButton) {
+      prevButton.addEventListener('click', () => {
+        prevSlide();
+        resetAutoRotation();
+      });
     }
   }
 
