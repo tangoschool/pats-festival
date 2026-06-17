@@ -76,7 +76,7 @@ PAGE_TEMPLATE = '''<!DOCTYPE html>
                 <div class="pricing-actions schedule-actions">
                   <a class="download-button" href="/complete-schedule/schedule.csv" download>Download CSV</a>
                 </div>
-                <div class="pricing-table schedule-table">
+                <div class="schedule-table">
                   <table>
                     <thead>
                       <tr>
