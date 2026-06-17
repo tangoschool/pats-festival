@@ -18,6 +18,8 @@ h3 {
   font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
   color: #191717;
   font-weight: 700;
+  /* Force bold where other selectors might override */
+  font-weight: 700 !important;
 }
 
 * {
