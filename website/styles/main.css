@@ -187,7 +187,7 @@ a:hover {
 }
 
 .mobile-menu .menu-item {
-  padding: 16px;
+  padding: 8px 16px;
   line-height: 36px;
   cursor: pointer;
   font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
@@ -322,13 +322,13 @@ main {
 
 .content-container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1400px;
   display: flex;
   justify-content: center;
 }
 
 .content-inner {
-  width: 66.666667%; /* lg=8 out of 12 */
+  width: 72%; /* increased from 66.67% for wider desktop */
   overflow: auto;
   margin: 0 0 50px 0;
 }
@@ -411,13 +411,13 @@ main {
 
 #content .body-content h2 {
   font-size: 1.5rem;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 1.334;
 }
 
 #content .body-content h3 {
   font-size: 1.25rem;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 1.6;
 }
 
@@ -474,10 +474,9 @@ main {
 
 #teasers .teaser-headline {
   color: #b01116;
-  font-weight: bold;
+  font-weight: 900;
   font-size: 2.125rem;
   font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
-  font-weight: 400;
   line-height: 1.235;
   letter-spacing: 0.00735em;
   margin: 0 0 16px 0;
@@ -488,6 +487,10 @@ main {
   font-size: 16px;
   line-height: 26px;
   font-weight: 400;
+}
+
+#teasers .teaser-body h2 {
+  font-weight: 900 !important;
 }
 
 #teasers .teaser-link {
