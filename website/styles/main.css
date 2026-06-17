@@ -12,6 +12,14 @@ body {
   background-color: white;
 }
 
+/* Heading defaults: ensure h2 and h3 are bold across the site */
+h2,
+h3 {
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  color: #191717;
+  font-weight: 700;
+}
+
 * {
   box-sizing: border-box;
 }
