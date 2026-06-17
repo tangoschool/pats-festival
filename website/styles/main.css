@@ -339,7 +339,7 @@ main {
 
 .content-inner {
   width: 72%; /* increased from 66.67% for wider desktop */
-  overflow: auto;
+  overflow: visible;
   margin: 0 0 50px 0;
 }
 
